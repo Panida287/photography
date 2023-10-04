@@ -16,8 +16,15 @@
     align-items: center;
 }
 
+h1 {
+    font-family: "Allison", cursive;
+    font-size: 100px;
+    font-weight: 400;
+    color: white;
+}
+
 .navbar a {
-    font-family: "Playfair+Display", sans, serif;
+    font-family: "Playfair+Display", sans;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -27,22 +34,38 @@
 }
 
 .navbar a:hover {
-    font-family: Allison, sans-serif;
+    font-family: "Playfair+Display", sans, serif;
     color: #FFB24B;
 }
 
-section {
-    display: compact;
+.flex-container {
+    display: flex;
+    align-items: center;
 }
 
-#be-professional {
-    color: #fff;
+.left-column {
+    flex: 1;
+    text-align: center;
 }
 
 .photo-showcase {
     width: 200px;
     height: 250px;
     object-fit: cover;
-    margin-left: 40px;
-    margin-top: 40px;
+}
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+}
+
+.image-grid img {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-end;
 }
