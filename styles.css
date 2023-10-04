@@ -10,7 +10,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 20px;
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +25,7 @@ h1 {
 
 .navbar a {
     font-family: "Playfair+Display", sans;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     color: #fff;
@@ -49,13 +49,14 @@ h1 {
 }
 
 .photo-showcase {
-    width: 200px;
-    height: 250px;
+    width: 100px;
+    height: 150px;
     object-fit: cover;
 }
 .right-column {
     flex: 1;
     display: flex;
+    justify-content: center;
     flex-wrap: nowrap;
     gap: 40px;
 }
