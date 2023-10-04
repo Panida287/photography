@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Allison&family=Cambay&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,9 +7,42 @@
 }
 
 .header {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    font-family: "Playfair+Display", sans, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 65px;
+}
+
+.navbar a:hover {
+    font-family: Allison, sans-serif;
+    color: #FFB24B;
+}
+
+section {
+    display: compact;
+}
+
+#be-professional {
+    color: #fff;
+}
+
+.photo-showcase {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 40px;
+    margin-top: 40px;
 }
