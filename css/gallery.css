@@ -31,13 +31,14 @@ main {
     justify-content: flex-start;
     align-items: center;
     cursor: pointer;
+    transition: top ease-in 0.5s;
 }
 
 .polaroid-bg:hover {
     position: relative;
     top: -10px;
     box-shadow: 0 4px 20px 0 #FFF;
-
+    transition: ease-in 0.2s;
 }
 
 #headshot {
