@@ -3,6 +3,11 @@
     text-decoration: none;
     list-style: none;
     margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #090C0F;
 }
 
 body {
