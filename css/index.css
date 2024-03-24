@@ -1,0 +1,82 @@
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.show-case {
+    height: 450px;
+    display: grid;
+    margin: 0 40px 0 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.welcome-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: "Allison", cursive;
+    font-size: 100px;
+}
+
+#headshot {
+    background: url("../assets/images/tinder/img1.jpg") no-repeat 0 0 / cover;
+    width: 144px;
+    height: 159px;
+}
+
+#tinder {
+    background: url("../assets/images/tinder/img2.jpg") no-repeat 0 0 / cover;
+    width: 144px;
+    height: 159px;
+}
+
+#wedding {
+    background: url("../assets/images/tinder/img3.jpg") no-repeat -60px 0 / cover;
+    width: 144px;
+    height: 159px;
+}
+
+#bourdoir {
+    background: url("../assets/images/tinder/img4.jpg") no-repeat 0 0 / cover;
+    width: 144px;
+    height: 159px;
+}
+
+h3 {
+    display: flex;
+    width: 100%;
+    height: 53px;
+    justify-content: center;
+    align-items: center;
+    font-family: "caveat", sans-serif;
+    color: black;
+}
+
+#tilted {
+    transform: rotate(-8deg);
+}
+
+@media (max-width: 879px) {
+    .welcome-text {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 769px) {
+    main {
+        flex-direction: column;
+    }
+
+    .welcome-text {
+        margin-bottom: 40px;
+    }
+
+}
