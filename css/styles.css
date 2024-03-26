@@ -258,3 +258,10 @@ footer {
         right: 0;
     }
 }
+
+@media (max-width: 500px) {
+    .copyright {
+        text-align: center;
+        font-size: 12px;
+    }
+}
