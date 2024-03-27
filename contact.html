@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png"/>
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png"/>
     <link rel="stylesheet" href="css/styles.css"/>
-    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/contact.css"/>
     <script src="javascript/app.js" defer></script>
     <title>panida photography</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
 </head>
 
 <body>
-
+<div class="overlay"></div>
 <header>
     <a href="index.html" class="link-home">
         <img alt="logo" class="logo" src="assets/logo/logo.png" height="133" width="277"/>
@@ -41,28 +41,26 @@
 </header>
 
 <main>
-    <div class="welcome-text">
-        Look professional
-        <br>
-        Be professional
+    <div class="image">
+        <img alt="" src="assets/images/wedding/img7.jpg">
     </div>
-    <div class="show-case">
-        <a class="polaroid-bg" id="tilted">
-            <div id="headshot"></div>
-            <h3>Headshot</h3>
-        </a>
-        <a class="polaroid-bg">
-            <div id="tinder"></div>
-            <h3>Tinder</h3>
-        </a>
-        <a class="polaroid-bg">
-            <div id="wedding"></div>
-            <h3>Wedding</h3>
-        </a>
-        <a class="polaroid-bg">
-            <div id="bourdoir"></div>
-            <h3>Bourdoir</h3>
-        </a>
+    <div class="contact-form">
+        <h3 class="form-header">Get in touch</h3>
+        <label id="name-label" for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <label id="email-label" for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter your email required">
+        <label id="phone-number-label" for="phone-number">Phone number</label>
+        <label id="area-code-label" for="area-code"></label>
+        <div class="phone-number-input">
+            <input type="tel" id="area-code" placeholder="Area code">
+            <input type="tel" id="phone-number" placeholder="Enter your phone number" required>
+        </div>
+        <label id="message-label" for="message">Your message</label>
+        <input type="text" id="message" placeholder="Your message" required>
+        <div class="btn-container">
+            <input class="btn" type="submit" value="Submit">
+        </div>
     </div>
 </main>
 
@@ -80,5 +78,4 @@
 </footer>
 
 </body>
-
 </html>
