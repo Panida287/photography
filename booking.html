@@ -10,11 +10,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png"/>
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png"/>
     <link rel="stylesheet" href="css/styles.css"/>
-    <link rel="stylesheet" href="css/contact.css"/>
+    <link rel="stylesheet" href="css/booking.css"/>
     <script src="javascript/app.js" defer></script>
-    <title>panida photography</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+    <title>panida photography</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allison&family=Caveat:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
@@ -22,7 +22,7 @@
 </head>
 
 <body>
-<div class="overlay"></div>
+
 <header>
     <a href="index.html" class="link-home">
         <img alt="logo" class="logo" src="assets/logo/logo.png" height="133" width="277"/>
@@ -43,23 +43,38 @@
 </header>
 
 <main>
-    <div class="image">
-        <img alt="" src="assets/images/wedding/img7.jpg">
-    </div>
-    <form class="contact-form">
-        <h3 class="form-header">Get in touch</h3>
-        <label id="name-label" for="name">Name</label>
-        <input type="text" id="name" placeholder="Enter your name" required>
-        <label id="email-label" for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your email required">
-        <label id="phone-number-label" for="phone-number">Phone number</label>
-        <input type="tel" id="phone-number" placeholder="Enter your phone number" required>
-        <label id="message-label" for="message">Your message</label>
-        <input type="text" id="message" placeholder="Your message" required>
-        <div class="btn-container">
-            <input class="btn" type="submit" value="Submit">
+    <h3>Book session with us</h3>
+    <form class="container">
+        <div class="name">
+            <label id="name-label" for="name-input">Client's Name:</label>
+            <label for="last-name-input"></label>
+            <div class="name-input-area">
+                <input id="name-input" type="text" placeholder="First name" required>
+                <input id="last-name-input" type="text" placeholder="last name" required>
+            </div>
+        </div>
+        <div class="date-time">
+            <label id="date-time-label" for="date-input">Session Date & Time:</label>
+            <label for="time-input"></label>
+            <input id="date-input" type="date">
+            <input id="time-input" type="time">
+        </div>
+        <div class="phone">
+            <label id="phone-number-label" for="phone-number">Phone number</label>
+            <input type="tel" id="phone-number" placeholder="Enter your phone number" required>
+        </div>
+        <div class="email">
+            <label id="email-label" for="email">Email:</label>
+            <input id="email" type="text" placeholder="Email" required>
+        </div>
+        <p>Type of session</p>
+        <div class="type-of-session">
+            <label>
+                <input type="radio" name="session" value="Headshot session">
+            </label>
         </div>
     </form>
+
 </main>
 
 <footer>

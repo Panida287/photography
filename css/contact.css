@@ -107,6 +107,11 @@ main {
     text-align: center;
 }
 
+.iti__country-list .iti__country-name {
+    font-family: "lato", sans-serif;
+    font-size: 16px;
+}
+
 #area-code {
     width: 70px;
     height: 34px;

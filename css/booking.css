@@ -1,0 +1,5 @@
+.nav-menu > :nth-child(4) {
+    color: #FFB24B;
+    cursor: not-allowed;
+    pointer-events: none;
+}
