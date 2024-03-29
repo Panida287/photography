@@ -69,9 +69,61 @@
         </div>
         <p>Type of session</p>
         <div class="type-of-session">
-            <label>
-                <input type="radio" name="session" value="Headshot session">
-            </label>
+            <div class="headshot">
+                <input id="headshot" type="radio" name="session" value="teadshot session">
+                <label id="headshot-label" for="headshot">Headshot session</label>
+            </div>
+            <div class="tinder">
+                <input id="tinder" type="radio" name="session" value="tinder session">
+                <label id="tinder-label" for="tinder">Tinder session</label>
+            </div>
+            <div class="wedding">
+                <input id="wedding" type="radio" name="session" value="wedding session">
+                <label id="wedding-label" for="wedding">Wedding session</label>
+            </div>
+            <div class="boudoir">
+                <input id="boudoir" type="radio" name="session" value="boudoir session">
+                <label id="boudoir-label" for="boudoir">Boudoir session</label>
+            </div>
+        </div>
+        <div class="session-detail">
+            <div class="photo-amount">
+                <input id="photo-amount-radio" type="radio" name="detail" value="photo amount">
+                <label id="photo-amount-label" for="photo-amount-radio">By amount of photos</label>
+                <label for="photo-amount-dropdown"></label>
+                <select id="photo-amount-dropdown">
+                    <option value="10 photos">10 photos 900 NOK</option>
+                    <option value="20 photos">20 photos 1.500 NOK</option>
+                    <option value="30 photos">30 photos 3.500 NOK</option>
+                </select>
+            </div>
+            <div class="half-day">
+                <input id="half-day" type="radio" name="detail" value="half day">
+                <label id="half-day-label" for="half-day">Half day</label>
+            </div>
+            <div class="full-day">
+                <input id="full-day" type="radio" name="detail" value="full day">
+                <label id="full-day-label" for="full-day">Full day</label>
+            </div>
+            <div class="photographer">
+                <label for="photographer-dropdown">Preferred photographer</label>
+                <select id="photographer-dropdown">
+                    <option value="Panida Paethanom">Panida Paethanom</option>
+                    <option value="Helene Flått">Helene Flått</option>
+                    <option value="Kenneth Sheikh">Kenneth Sheikh</option>
+                    <option value="Berken Ates">Berken Ates</option>
+                    <option value="Patrick Røthe">Patrick Røthe</option>
+                    <option value="No preference">No preference</option>
+                </select>
+                <a href="about.html">See our photographers</a>
+            </div>
+            <div class="request">
+                <label id="request-label" for="request">Other request/Description</label>
+                <input id="request" type="text" placeholder="your message">
+            </div>
+            <div class="btn-container">
+                <input class="btn" type="submit" value="Submit">
+            </div>
         </div>
     </form>
 
