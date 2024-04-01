@@ -3,3 +3,200 @@
     cursor: not-allowed;
     pointer-events: none;
 }
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -2;
+    top: 118px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFB24B;
+}
+
+.container {
+    border-radius: 16px;
+    border: 1px solid #FFB24B;
+    padding: 40px;
+    margin: 40px auto;
+    grid-row-gap: 20px;
+    width: 90%;
+    max-width: 750px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+label {
+    color: #FFB24B;
+    font-family: "lato", sans-serif;
+    font-size: 16px;
+}
+
+.payment-label {
+    color: white;
+}
+
+input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    border-radius: 8px;
+    padding: 0 8px;
+    outline: none;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.name-input-area {
+    display: flex;
+    gap: 8px;
+}
+
+#name-input,
+#last-name-input {
+    width: 50%;
+}
+
+.date-time {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.date-time-input {
+    display: flex;
+    gap: 8px;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#phone-number {
+    width: 50%;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#email {
+    width: 50%;
+}
+
+.p2 {
+    color: #FFB24B;
+    margin: 8px 0;
+}
+
+.type-of-session-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#photo-amount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.by-photo-amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.session-type,
+.detail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#photographer-dropdown-label {
+    margin: 8px 0;
+}
+
+#photographers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.photographer-selection {
+    display: flex;
+    gap: 40px;
+}
+
+#photographer-link {
+    color: #FFB24B;
+    text-decoration: underline;
+}
+
+.request {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+#request {
+    height: 80px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.policy {
+    color: #FFB24B;
+    text-decoration: underline;
+}
+
+@media (max-width: 599px) {
+    .type-of-session-container {
+        grid-template-columns: 1fr;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    #photo-amount {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+    }
+
+    #phone-number,
+    #email {
+        width: 100%;
+    }
+}
